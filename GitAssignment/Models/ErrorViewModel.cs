@@ -5,5 +5,7 @@ namespace GitAssignment.Models
         public string? RequestId { get; set; }
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+
+        public bool IsSuccess { get; set; }
     }
 }

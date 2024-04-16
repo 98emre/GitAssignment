@@ -8,6 +8,9 @@ namespace GitAssignment.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+
+
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -15,11 +18,13 @@ namespace GitAssignment.Controllers
 
         public IActionResult Index()
         {
+            Console.WriteLine("Hello Food World");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            Console.WriteLine("Hello Food World, only privacy");
             return View();
         }
 
